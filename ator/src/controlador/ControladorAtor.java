@@ -15,9 +15,7 @@ import tela.manutencao.ManutencaoAtor;
  * @author Administrador
  */
 public class ControladorAtor {
-
-    public static void inserir(ManutencaoAtor aThis) {
-        public static void inserir(ManutencaoAtor man){
+    public static void inserir(ManutencaoAtor man){
         Ator objeto = new Ator();
         objeto.setNome_artistico(man.jtfNomeArtistico.getText());
         objeto.setNome_real(man.jtfNomeReal.getText());
@@ -28,8 +26,8 @@ public class ControladorAtor {
         } else {
             JOptionPane.showMessageDialog(null, "Erro!");
         }
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-  
-    
 }
+
+}
+  
+  
